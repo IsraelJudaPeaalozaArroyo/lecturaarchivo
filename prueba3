@@ -1,0 +1,38 @@
+package prueba2;
+import java.io.*;
+import java.util.*;
+public class Prueba2 {
+
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        // TODO code application logic here
+        String s1;
+        String s2;
+        BufferedReader br = new BufferedReader (new FileReader ("C:\\Users\\judas\\OneDrive\\Escritorio\\yaeresmio.txt"));
+ 
+        s1 = br.readLine();
+ 
+        int numTokens = 0;
+        StringTokenizer st = new StringTokenizer (s1);
+
+        while (st.hasMoreTokens())
+        {
+            s2 = st.nextToken();
+            numTokens++;
+            
+            System.out.println ( s2);
+        }
+        
+        System.out.println ( "");
+         System.out.println ( "************************************************");
+        
+        String cadena1 = "ya me aburri :v";
+        String[] palabras1 = cadena1.split(" ");
+        for (String palabra : palabras1)
+        {
+            System.out.println(palabra);
+        }
+        //int i;
+        //for(cadena1 i=2){
+ 
+    }
+}
